@@ -5,11 +5,24 @@
 //  Created by Juan Aboites on 9/15/23.
 //
 
+
+//Content view
+//  Blank
+//  App Error
+//  Camera
+//  State
+//    detected class
+//    confidence
+//    etc
+
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var core = Core()
+        
     var body: some View {
-        Text("Hello, world!")
+        Text(core.errorState)
             .padding()
     }
 }

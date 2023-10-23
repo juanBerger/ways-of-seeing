@@ -11,6 +11,15 @@
 		17265C372AB4D5D6003C23A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17265C362AB4D5D6003C23A4 /* ContentView.swift */; };
 		17265C392AB4D5D8003C23A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17265C382AB4D5D8003C23A4 /* Assets.xcassets */; };
 		17265C3C2AB4D5D8003C23A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17265C3B2AB4D5D8003C23A4 /* Preview Assets.xcassets */; };
+		17265C472AB4E011003C23A4 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17265C452AB4E011003C23A4 /* Camera.swift */; };
+		17265C492AB4E04B003C23A4 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17265C482AB4E04B003C23A4 /* Core.swift */; };
+		17265C4B2AB4E9A2003C23A4 /* yolo.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 17265C4A2AB4E9A2003C23A4 /* yolo.mlmodel */; };
+		17F1FE942AE318EA00297024 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17F1FE932AE318EA00297024 /* AudioKit */; };
+		17F1FE962AE375E200297024 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1FE952AE375E200297024 /* Audio.swift */; };
+		17F1FE9C2AE5A8B500297024 /* Cue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1FE9B2AE5A8B500297024 /* Cue.swift */; };
+		17F1FEA02AE5B86300297024 /* PlayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1FE9F2AE5B86300297024 /* PlayerConfig.swift */; };
+		17F1FEA22AE5CB9D00297024 /* CantinaBand60.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17F1FEA12AE5CB9D00297024 /* CantinaBand60.wav */; };
+		17FA3E552AB577130070572C /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = 17FA3E542AB577130070572C /* Atomics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,13 @@
 		17265C362AB4D5D6003C23A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17265C382AB4D5D8003C23A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17265C3B2AB4D5D8003C23A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17265C452AB4E011003C23A4 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		17265C482AB4E04B003C23A4 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		17265C4A2AB4E9A2003C23A4 /* yolo.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolo.mlmodel; sourceTree = "<group>"; };
+		17F1FE952AE375E200297024 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		17F1FE9B2AE5A8B500297024 /* Cue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cue.swift; sourceTree = "<group>"; };
+		17F1FE9F2AE5B86300297024 /* PlayerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerConfig.swift; sourceTree = "<group>"; };
+		17F1FEA12AE5CB9D00297024 /* CantinaBand60.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CantinaBand60.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F1FE942AE318EA00297024 /* AudioKit in Frameworks */,
+				17FA3E552AB577130070572C /* Atomics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,7 @@
 			children = (
 				17265C332AB4D5D6003C23A4 /* wos-0923 */,
 				17265C322AB4D5D6003C23A4 /* Products */,
+				179F6D8C2AB542A100951F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +70,17 @@
 		17265C332AB4D5D6003C23A4 /* wos-0923 */ = {
 			isa = PBXGroup;
 			children = (
+				17F1FE952AE375E200297024 /* Audio.swift */,
 				17265C342AB4D5D6003C23A4 /* wos_0923App.swift */,
+				17265C452AB4E011003C23A4 /* Camera.swift */,
+				17265C482AB4E04B003C23A4 /* Core.swift */,
 				17265C362AB4D5D6003C23A4 /* ContentView.swift */,
+				17265C4A2AB4E9A2003C23A4 /* yolo.mlmodel */,
+				17F1FEA12AE5CB9D00297024 /* CantinaBand60.wav */,
 				17265C382AB4D5D8003C23A4 /* Assets.xcassets */,
 				17265C3A2AB4D5D8003C23A4 /* Preview Content */,
+				17F1FE9B2AE5A8B500297024 /* Cue.swift */,
+				17F1FE9F2AE5B86300297024 /* PlayerConfig.swift */,
 			);
 			path = "wos-0923";
 			sourceTree = "<group>";
@@ -65,6 +91,13 @@
 				17265C3B2AB4D5D8003C23A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		179F6D8C2AB542A100951F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,10 @@
 			dependencies = (
 			);
 			name = "wos-0923";
+			packageProductDependencies = (
+				17FA3E542AB577130070572C /* Atomics */,
+				17F1FE932AE318EA00297024 /* AudioKit */,
+			);
 			productName = "wos-0923";
 			productReference = 17265C312AB4D5D6003C23A4 /* wos-0923.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,10 @@
 				Base,
 			);
 			mainGroup = 17265C282AB4D5D6003C23A4;
+			packageReferences = (
+				17FA3E532AB577130070572C /* XCRemoteSwiftPackageReference "swift-atomics" */,
+				17F1FE922AE318EA00297024 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 17265C322AB4D5D6003C23A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17265C3C2AB4D5D8003C23A4 /* Preview Assets.xcassets in Resources */,
+				17F1FEA22AE5CB9D00297024 /* CantinaBand60.wav in Resources */,
 				17265C392AB4D5D8003C23A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F1FE962AE375E200297024 /* Audio.swift in Sources */,
+				17F1FEA02AE5B86300297024 /* PlayerConfig.swift in Sources */,
+				17F1FE9C2AE5A8B500297024 /* Cue.swift in Sources */,
+				17265C472AB4E011003C23A4 /* Camera.swift in Sources */,
+				17265C4B2AB4E9A2003C23A4 /* yolo.mlmodel in Sources */,
 				17265C372AB4D5D6003C23A4 /* ContentView.swift in Sources */,
 				17265C352AB4D5D6003C23A4 /* wos_0923App.swift in Sources */,
+				17265C492AB4E04B003C23A4 /* Core.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +320,7 @@
 				DEVELOPMENT_TEAM = 67SXQ9HYCU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME ) Camera Is Needed To Sense Users Environment (AR)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +350,7 @@
 				DEVELOPMENT_TEAM = 67SXQ9HYCU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME ) Camera Is Needed To Sense Users Environment (AR)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +391,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17F1FE922AE318EA00297024 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		17FA3E532AB577130070572C /* XCRemoteSwiftPackageReference "swift-atomics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-atomics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17F1FE932AE318EA00297024 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F1FE922AE318EA00297024 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		17FA3E542AB577130070572C /* Atomics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17FA3E532AB577130070572C /* XCRemoteSwiftPackageReference "swift-atomics" */;
+			productName = Atomics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17265C292AB4D5D6003C23A4 /* Project object */;
 }
