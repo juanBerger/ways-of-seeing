@@ -1,1 +1,2 @@
 # ways-of-seeing
+An iOS app that attaches sounds to objects detected by a YOLO object detector model. The idea is to begin to create an audio centric AR application where vision is used to understand the environment and sound is used to augment objects of interest. A very early version was deployed in the museum exhibit described in this [NY Times article](https://www.nytimes.com/2019/09/09/arts/design/muslims-in-brooklyn.html).
